@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice Set1</title>
+</head>
+<body>
+    <script>
+        //1:create a string and add no to it
+        let a="Upasna";
+        let b=8;
+        console.log(a+b);
+
+
+
+        //2:find the datatypee of above ans;
+        let a="Upasna";
+        let b=8;
+        let c=a+b;
+        console.log(typeof c);   
+        
+        
+        //3:create a constant object and can we try to change it to no later
+        const a={
+            name:"upasna",
+            sec:1,
+            isPrincipal:false
+        }
+        a=65; // so no bcoz assignment to constant variable
+
+
+        //4:try to add new key to constant object in prob3 were you able to do it
+        const a={
+            name:"upasna",
+            sec:1,
+            isPrincipal:false
+        }
+        a['friend']="BOOKs";
+        a['name']="pashi";
+        console.log(a);     //anything can be changed but aa can't store string or anything else bcoz it is pointing to object only
+        
+
+
+        //5:create a word meaning dictionary of 3 words
+        const dictionary={
+            upasna:"pooja",
+            nutan:"new",
+            khushi:"happy"
+
+        }
+        console.log(dictionary.khushi);
+        console.log(dictionary['khushi']);
+        </script>
+</body>
+</html>
