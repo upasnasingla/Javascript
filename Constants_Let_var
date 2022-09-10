@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const let Var</title>
+</head>
+<body>
+    <script>
+        var a=20;
+        {
+            var a=30;
+            console.log(a);   //var has global scope
+        }
+      
+         console.log(a);
+
+
+         var a=20;
+        {
+            let a=30;
+            console.log(a);   //let  has block scope
+        }
+      
+         console.log(a);
+
+        let ab=20;
+        {
+             ab=30;     //once declared with let only value can be changed i.e can be updated not redeclared
+            console.log(ab);   
+        }
+      
+         console.log(ab);
+
+         var ac=20;
+        {
+            let ac=30;
+            console.log(ac);     
+        }
+      
+        //  console.log(ac);
+
+        //  const az=10;   //should be initialized where declared
+        //  az=20;     //throws error bcoz constant can't be changed
+        //  console.log(az);
+
+
+        var l;
+        console.log(l);   //by default undefined
+
+        
+    </script>
+</body>
+</html>
