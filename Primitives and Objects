@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitives and Objects</title>
+</head>
+<body>
+    <script>
+        let a=null;
+        let b=345;
+        let c=true;
+        let d=BigInt(345);
+        let e="upasna";
+        let f=Symbol("I am a symbol");
+        let g=undefined;
+        console.log(a,b,c,d,e,f,g);
+        console.log(typeof f);
+
+
+      //objects 
+      const item={
+        "harry":true,   //harry can and cannot be written in ""
+        "upasna":true,
+        "vanshika":65,
+        "crack":undefined
+
+      }
+      console.log(item["harry"]);
+      console.log(item["abc"]);
+
+    </script>
+</body>
+</html>
