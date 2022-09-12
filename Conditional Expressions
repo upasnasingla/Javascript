@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Expressions</title>
+</head>
+<body>
+    <script>
+        var a=prompt("tell your age");   //asks you
+        //console.log(a);
+        //console.log(typeof a);  //prompt always takes strings
+        a=Number.parseInt(a);  //converts string to number
+        //console.log(typeof a);
+        console.log(a);
+        if(a>18){
+            alert("this is valid age to drive");
+        }
+
+        else if(a==18){
+            alert("not a valid age to drive");
+        }
+        else{
+            alert("you are a kid");
+        }
+       
+        var b=alert("hey");
+        console.log(b);
+        console.log(typeof b);
+
+
+        //switch cases
+        const expr="oranges";
+        switch(expr){
+            case 'oranges':
+                console.log("oranges");
+                break;
+            case "bananas":
+                console.log("bananas");
+                break;
+            default:
+                console.log("tomatoes");
+        }
+
+
+        //ternary operators    ->shortcut method
+        var age1=18;
+        console.log("you can",age1>18?"drive":"not drive");
+
+
+
+    </script>
+</body>
+</html>
