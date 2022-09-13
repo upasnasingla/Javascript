@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While loops</title>
+</head>
+<body>
+    <script>
+        //while loop condition checks first and then block runs
+        let a=10;
+        let i=0;
+        while(i<a){
+            console.log(i);
+            i++;    //iteration condition
+        }
+
+        while(i<a){
+            console.log(i);
+               // infinite bcoz iteration condition is  ot there
+        }
+
+        while(true){   //infinite condition again since loop will always be true
+            console.log(i);
+            i++;    
+        }
+
+        //do while block runs and then condition
+        let b=20;
+        let ib=20;
+        do{
+            console.log(ib);
+            ib++;    
+        }while(ib<b)   //will print 20 
+
+    </script>
+</body>
+</html>
