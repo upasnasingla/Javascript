@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loops</title>
+</head>
+<body>
+    <script>
+        // for loop
+        for(let i=0;i<5;i++){
+            console.log(i);
+        }
+           console.log(i);    //error let local scope
+       
+        //adding first n natural no's
+        let sum=0;
+        for(let i=1;i<=5;i++){
+           sum=sum+i;
+        }
+        console.log(sum);
+
+         
+        //multiplying first n natural no
+        let multiply=1;
+        for(let i=1;i<=5;i++){
+            multiply=multiply*i;
+        }
+        console.log(multiply);
+
+
+        //for in loop
+        let obj={
+            a:25,
+            b:56,
+            c:5,
+            d:10
+        }
+        for(let a in obj){
+            console.log(a); //only keys print 
+        }
+        
+        for(let a in obj){
+            console.log(obj[a]);    //only values print
+        }
+        for (let a in obj){
+            console.log("marks of "+a+" are :"+obj[a]);   //keys and values both print
+        }
+
+
+        //for of loop
+        let obj={
+            abvc:25,
+            bvcrfty:56,
+            cjnjknk:5,
+            dnjnklm:10,
+            45:"abc"
+        }
+        for(let a of obj){
+            console.log(a);   //error since not iterable
+        }
+
+        for(let a of  "abvc"){
+            console.log(a);        
+        }
+        
+        for(let a of  "45"){
+            console.log(a);        
+        }
+
+    </script>
+</body>
+</html>
