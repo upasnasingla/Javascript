@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        //unparameterized function
+        function print(){
+            console.log("print me");
+        }
+        print();
+
+         //parametrized function
+        function onePlusAverage(x,y){    //x and y are local variables
+            return 1+((x+y)/2);
+            console.log("Done"); 
+        }
+
+        let a=2;
+        let b=4;
+        let c=8;
+
+        console.log("average is:"+onePlusAverage(4,6));     //function call is explicitly required
+        console.log("average is:"+onePlusAverage(40,16));
+        console.log("average is:"+onePlusAverage(43,67));
+
+
+
+        function onePlusAverage(x,y){    
+            return Math.round(1+((x+y)/2));   //will round of 
+            console.log("Done"); 
+        }
+
+        let a=2;
+        let b=4;
+        let c=8;
+
+        console.log("average is:"+onePlusAverage(4,6));
+        console.log("average is:"+onePlusAverage(40,16));
+        console.log("average is:"+onePlusAverage(43,67));
+
+
+         //Arrow function
+        const sum=(p,q)=>{   //parametrized
+            return p+q;
+
+        }
+
+        console.log(sum(9,10));
+
+        const sum1=()=>{              //umparametrized
+            console.log("hi");
+        }
+       
+        sum1();
+
+        const sum2=()=>{
+            return "yes";
+        }
+        console.log(sum2());
+
+        const sum2=()=>{
+             return "yes";
+         }
+        let up=sum2();
+        console.log(up);
+    </script>
+</body>
+</html>
