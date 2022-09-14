@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        //collection of characters is string
+        let a="Upasna";
+        console.log(a.length);
+
+        let b='Upasna';
+        console.log(b.length);
+        console.log(b[0]);    //indexing starts from 0
+
+        //Template literals  use backtic instead of quotes
+        let boy1="vansh";
+        let boy2="arun";
+        let name=`${boy1} is friend of ${boy2}`;    //String interpolation->insert variables directly into string
+        console.log(name);
+
+        let sentence=`the name "is" ${boy1}'nagra' of pb`;
+        console.log(sentence);
+
+       //Escape sequence characters
+       let fruit='Bana\'na';    //used to print special characters
+       console.log(fruit);
+       console.log(fruit.length);  //7 bcoz \'  considered as one
+
+       let fruit1='bana\n ma';   //to move in different line
+       console.log(fruit1);
+
+       let fruit2="Bana\"na";    
+       console.log(fruit2);
+       console.log(fruit2.length);   //  /t->tab  /r->carriage return
+        
+
+    </script>
+</body>
+</html>
