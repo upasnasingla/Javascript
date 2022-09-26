@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <script>
+   let name="Upasna";
+    console.log(name.toUpperCase());
+    console.log(name.toLowerCase());
+
+    let name11=name.slice(1,3);  //incudes 1 and not 3
+    console.log(name11);
+    console.log(name);
+    console.log(name.slice(2));     //starts from 2nd index till last
+
+     console.log(name.replace("Upa","Pas"));   
+     console.log(name.replace("upa","Pas"));     //does not affect since in lowercase
+     console.log(name);
+
+    let friend="Pashi";
+    console.log(name.concat(" is a friend of ",friend));
+    console.log(name);
+
+    let name1="           meena        ";
+    console.log(name1);       
+    console.log(name1.trim());   //removes whitespaces
+
+   //Strings are immutable i.e original strings never chnges
+   let str="Upasna"+ " "+"Singla";
+   console.log(str);
+   console.log(str[0]);
+   console.log(str[6]);
+   str[4]="p";     //will not show any change
+   console.log(str);
+
+
+    
+</script>
+</body>
+</html>
