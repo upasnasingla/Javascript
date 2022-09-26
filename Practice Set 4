@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 4</title>
+</head>
+<body>
+    <script>
+        
+   //1:Using for loop to print string in array way
+   let str="Upasna"+ " "+"Singla";
+   for(let i=0;i<str.length;i++){
+    console.log(str[i]);
+   }
+
+   //2:Output of following code
+    let name="har\"";
+   console.log(name.length);       // \" ->escape sequence consider as one
+
+   //3:Given a string check includes,endsWith,startsWith  ->>returns either true or false
+   let str="Zailo is a good girl.";
+   console.log(str.includes("."));   
+   console.log(str.startsWith("Zailo"));   
+   console.log(str.endsWith("girl"));
+
+   //4:convert a given string to lowercase
+   let string="UPASNA";
+   console.log(string.toLowerCase());
+
+
+   //5:Extract the amount out of this string 
+     let str="Please give Rs 100";
+    let amount=Number.parseInt(str.slice(15));  //1stway
+    console.log(amount);
+      console.log(typeof amount);   //without parseint it gives string
+
+    let amount=(str.slice("Please give Rs".length));   //2nd way
+    console.log(amount);
+    console.log(str.length);
+    
+
+
+
+   //6:Try to change 4th character of a given string.Were you able to do it
+   let str="Upasna";
+   str[4]="p";     
+   console.log(str);   //no not possible
+
+
+
+
+    </script>
+</body>
+</html>
